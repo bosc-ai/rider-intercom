@@ -1,0 +1,26 @@
+{
+  "name": "proximity-intercom",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "icons": "node scripts/generate-icons.mjs"
+  },
+  "dependencies": {
+    "livekit-client": "^2.7.0",
+    "livekit-server-sdk": "^2.9.0",
+    "next": "^16.2.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "sharp": "^0.33.5",
+    "typescript": "^5"
+  }
+}
