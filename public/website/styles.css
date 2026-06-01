@@ -119,7 +119,7 @@ body {
 
 .hero-content {
   display: flex;
-  flex-direction: flex-column;
+  flex-direction: column;
 }
 
 .badge-offline {
