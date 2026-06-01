@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rider Intercom — Fully Offline Peer-to-Peer Audio Intercom for Android</title>
+  <meta name="description" content="Stunning ultra-low latency peer-to-peer audio intercom for motorcyclists. Works 100% offline outdoors using local portable hotspots. Zero cellular network or Wi-Fi data required.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Animated Gradient Backdrops -->
+  <div class="gradient-backdrop"></div>
+
+  <div class="container">
+    
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <a href="#" class="logo" id="logo-nav">RIDER<span>INTERCOM</span></a>
+      <nav class="nav-links">
+        <a href="#features" id="link-features">Features</a>
+        <a href="#how-it-works" id="link-how">How it Works</a>
+        <a href="#get-started" id="link-start" class="btn-nav">Get Started</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge-offline">100% Offline P2P</div>
+        <h1 class="hero-title" id="main-hero-title">Conquer the Ride.<br>Stay <span>Connected</span>.</h1>
+        <p class="hero-desc">
+          The ultimate ultra-low latency, peer-to-peer intercom application for motorcyclists. 
+          Communicate with your riding group flawlessly over a local hotspot or Wi-Fi network with absolutely <strong>no cellular data, no network coverage, and no router internet</strong> required.
+        </p>
+        <div class="hero-buttons">
+          <a href="#get-started" class="btn-primary" id="btn-download-apk">Download APK for Android</a>
+          <a href="#developer-start" class="btn-secondary" id="btn-dev-quickstart">Developer Quick Start</a>
+        </div>
+      </div>
+      <div class="hero-preview">
+        <img src="assets/app_mockup.png" alt="Rider Intercom Active Call Dashboard Screen Mockup" class="mockup-img" id="img-app-mockup">
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+      <div class="section-header">
+        <span class="section-subtitle">Features</span>
+        <h2 class="section-title">Engineered for the Open Road</h2>
+        <p class="section-desc">Designed to withstand the most demanding outdoor environments and provide reliable, crystal-clear communications in regions with zero signal.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card" id="card-cell-signal">
+          <div class="feature-icon">📶</div>
+          <h3>Zero Cellular Signal Needed</h3>
+          <p>Works anywhere on Earth—deep canyons, high mountains, or isolated deserts. One phone emits a local hotspot, others connect. Zero data plan consumption.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card" id="card-latency">
+          <div class="feature-icon">🎙️</div>
+          <h3>Instant WebRTC Audio</h3>
+          <p>Utilizes advanced Peer-to-Peer WebRTC technology directly over local TCP sockets. Delivers crystal-clear voice communication with ultra-low latency and zero buffering.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card" id="card-keepawake">
+          <div class="feature-icon">🛡️</div>
+          <h3>Automatic Screen Wake Lock</h3>
+          <p>Equipped with reactive screen lock suspension so that your screen remains active during high-speed rides. Provides instant hands-free monitoring of connected riders.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card" id="card-logs">
+          <div class="feature-icon">⚙️</div>
+          <h3>Active Developer Console</h3>
+          <p>Built-in real-time diagnostic console. Monitor handshakes, local IP discovery, and network events on the fly, giving you full visibility of your connectivity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="section" id="how-it-works">
+      <div class="section-header">
+        <span class="section-subtitle">Offline Guide</span>
+        <h2 class="section-title">Seamless Offline P2P Setup</h2>
+        <p class="section-desc">No routers or cell towers needed. Connect your devices in seconds using one of two offline local network methodologies.</p>
+      </div>
+
+      <div class="instructions-box">
+        <!-- Interactive Tabs -->
+        <div class="tabs-container">
+          <button class="tab-btn active" id="tab-hotspot-btn" onclick="switchTab('hotspot')">METHOD A: PORTABLE WIFI HOTSPOT</button>
+          <button class="tab-btn" id="tab-router-btn" onclick="switchTab('router')">METHOD B: SHARED ROUTER</button>
+        </div>
+
+        <!-- Hotspot Tab Content -->
+        <div class="tab-content active" id="tab-content-hotspot">
+          <div class="step-card" id="hotspot-step-1">
+            <span class="step-number">01</span>
+            <h4>Host Setup</h4>
+            <p>The <strong>Host</strong> turns on their phone's <strong>Portable Wi-Fi Hotspot</strong> in settings (no mobile/cellular data is needed; leave data OFF to save battery).</p>
+          </div>
+          <div class="step-card" id="hotspot-step-2">
+            <span class="step-number">02</span>
+            <h4>Riders Connect</h4>
+            <p>All other riders go to their Wi-Fi settings, locate the Host's hotspot name, and <strong>connect to the network</strong>.</p>
+          </div>
+          <div class="step-card" id="hotspot-step-3">
+            <span class="step-number">03</span>
+            <h4>Start Host</h4>
+            <p>Host opens the app, enters their display name, and clicks <strong>START INTERCOM HOST</strong>. The Host's local IP address (typically <code>192.168.43.1</code>) is displayed.</p>
+          </div>
+          <div class="step-card" id="hotspot-step-4">
+            <span class="step-number">04</span>
+            <h4>Riders Join</h4>
+            <p>Other riders open their app, enter the Host's IP, and click <strong>JOIN INTERCOM SESSION</strong>. Microphones link instantly over local WebRTC!</p>
+          </div>
+        </div>
+
+        <!-- Router Tab Content -->
+        <div class="tab-content" id="tab-content-router">
+          <div class="step-card" id="router-step-1">
+            <span class="step-number">01</span>
+            <h4>Connect Router</h4>
+            <p>Connect all phones to the same Wi-Fi router (e.g. at your home or basecamp). The router does <strong>not</strong> need an active DSL or fiber internet connection.</p>
+          </div>
+          <div class="step-card" id="router-step-2">
+            <span class="step-number">02</span>
+            <h4>Identify IP</h4>
+            <p>The designated Host clicks <strong>START INTERCOM HOST</strong>. The app automatically detects their router IP (e.g., <code>192.168.1.15</code>) and displays it.</p>
+          </div>
+          <div class="step-card" id="router-step-3">
+            <span class="step-number">03</span>
+            <h4>Input & Join</h4>
+            <p>Other riders input the Host's exact IP address into their "Host IP Address" field and click <strong>JOIN INTERCOM SESSION</strong>. Your group audio session is immediately active.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer Quick Start / Terminal Command Section -->
+    <section class="section" id="developer-start">
+      <div class="terminal-section">
+        <div>
+          <span class="section-subtitle">For Developers</span>
+          <h2 class="section-title">Build & Install in Seconds</h2>
+          <p class="section-desc" style="margin-bottom: 24px;">
+            Rider Intercom is open source and built using React Native. Follow these simple steps to build the APK and deploy it to your Android device directly from the codebase.
+          </p>
+          <p class="section-desc">
+            Make sure your Android device has **USB Debugging** enabled and is plugged into your system.
+          </p>
+        </div>
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <span class="terminal-title">RiderIntercomNative_Terminal</span>
+          </div>
+          <div class="terminal-body">
+            <div class="cmd-line"># 1. Install project dependencies</div>
+            <div class="cmd-copy">
+              <span class="cmd-text" id="code-install">npm install</span>
+              <button class="btn-copy" id="btn-copy-install" onclick="copyCode('code-install', 'btn-copy-install')">COPY</button>
+            </div>
+            
+            <div class="cmd-line" style="margin-top: 24px;"># 2. Compile and launch on connected Android phone</div>
+            <div class="cmd-copy">
+              <span class="cmd-text" id="code-android">npm run android</span>
+              <button class="btn-copy" id="btn-copy-android" onclick="copyCode('code-android', 'btn-copy-android')">COPY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section cta-section" id="get-started">
+      <h2 class="cta-title">Ready for Your Next Road Trip?</h2>
+      <p class="cta-desc">Download the latest release and connect with your riding buddies with absolutely zero cell network costs or subscription fees.</p>
+      <a href="assets/RiderIntercom.apk" download="RiderIntercom.apk" class="btn-primary" id="btn-download-footer">DOWNLOAD ANDROID APK</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-logo">RIDER<span>INTERCOM</span></div>
+      <div class="footer-copyright">&copy; 2026 Rider Intercom. Local Peer-to-Peer Communications.</div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
