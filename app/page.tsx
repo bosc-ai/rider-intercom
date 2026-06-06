@@ -490,6 +490,11 @@ export default function Home() {
             <span className="dot" data-status={status} />
             Rider Intercom
           </div>
+          {(status === "idle" || status === "error") && (
+            <a href="/download" className="downloadLink">
+              Download App
+            </a>
+          )}
           {status === "live" && (
             <span className="chan">
               {isProximityMode ? `${RADIUS_M}m radius` : displayCode}

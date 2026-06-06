@@ -458,3 +458,22 @@ body {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.3; }
 }
+
+.downloadLink {
+  font-size: 13px;
+  color: var(--accent2);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 1px solid rgba(43, 179, 255, 0.3);
+  border-radius: 20px;
+  background: rgba(43, 179, 255, 0.05);
+  transition: background 0.15s, border-color 0.15s;
+}
+.downloadLink:hover {
+  background: rgba(43, 179, 255, 0.15);
+  border-color: var(--accent2);
+}
+.downloadLink:active {
+  transform: translateY(1px);
+}
