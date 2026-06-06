@@ -13,6 +13,14 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: "/download",
+        destination: "/download/index.html",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
